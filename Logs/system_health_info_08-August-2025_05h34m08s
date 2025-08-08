@@ -1,0 +1,55 @@
+============================================================
+============================================================
+||                                                        ||
+||                                                        ||
+||          ---- System Health Check ------               ||
+||                                                        ||
+||       logs at 08-August-2025_05h:34m:08s                      ||
+||                                                        ||
+============================================================
+============================================================
+                                                            
+
+Hostname: bastion
+
+
+--- CPU Load ---
+ 17:34:09 up 13:52,  3 users,  load average: 0.00, 0.02, 0.00
+
+
+--- Memory Usage ---
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       321Mi       1.6Gi       7.0Mi       162Mi       1.6Gi
+Swap:          4.8Gi          0B       4.8Gi
+
+
+--- Disk Usage ---
+Filesystem                  Size  Used Avail Use% Mounted on
+devtmpfs                    4.0M     0  4.0M   0% /dev
+tmpfs                       982M     0  982M   0% /dev/shm
+tmpfs                       393M  7.2M  386M   2% /run
+/dev/mapper/rhel_vbox-root   64G   14G   50G  22% /
+/dev/sda1                   960M  205M  756M  22% /boot
+/dev/mapper/rhel_vbox-home   31G  891M   30G   3% /home
+/dev/sr0                     12G   12G     0 100% /dvd
+tmpfs                       197M     0  197M   0% /run/user/1000
+
+
+--- Top 5 Memory Consuming Processes ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           2  0.0  0.0      0     0 ?        S    03:41   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    03:41   0:00 [pool_workqueue_]
+root           4  0.0  0.0      0     0 ?        I<   03:41   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   03:41   0:00 [kworker/R-sync_]
+root           6  0.0  0.0      0     0 ?        I<   03:41   0:00 [kworker/R-slub_]
+
+
+--- Top 5 CPU Consuming Processes ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.8 173680 16116 ?        Ss   03:41   0:27 /usr/lib/systemd/systemd --switched-root --system --deserialize 31
+root           2  0.0  0.0      0     0 ?        S    03:41   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    03:41   0:00 [pool_workqueue_]
+root           4  0.0  0.0      0     0 ?        I<   03:41   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   03:41   0:00 [kworker/R-sync_]
+
+
